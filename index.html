@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Module 2</title>
+    
+</head>
+<style>
+body {
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.row-item {
+    float: left;
+    margin: 10px;
+    padding: 25px 10px 10px;
+    position: relative;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background-color: #999;
+}
+.row-item .title {
+    top: 0;
+    right: 0;
+    padding: 5px 25px;
+    position: absolute;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.row-item .title h3 {
+    margin: 0;
+}
+.row-item#item1 .title {
+    background-color: #d59898;
+}
+.row-item#item2 .title {
+    background-color: #c14543;
+}
+.row-item#item3 .title {
+    background-color: #e5d198;
+}
+
+/* Desktops */
+@media only screen and (min-width : 992px) {
+    .row-item {
+        width: 31%;
+    }
+}
+/* Tablets */
+@media only screen and (min-width : 768px) 
+and (max-width: 991px) {
+    .row-item {
+        width: 47.3%;
+    }
+    .row-item#item3 {
+        width: 97.8%;
+    }
+}
+/* Mobile */ 
+@media only screen and (max-width : 767px) {
+    .row-item {
+        width: 70%;
+        float: none;
+        margin: 25px auto;
+    }
+}
+</style>
+<body>
+    <h1>Our Menu</h1>
+    <div class="row">
+        <div class="row-item" id="item1">
+            <div class="title">
+                <h3>Chicken</h3>
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum ultrices accumsan. Praesent placerat nec risus ac auctor. Praesent lobortis, magna vel porta ultrices, nulla nibh efficitur ipsum, at feugiat eros felis in leo. Integer enim dui, dignissim feugiat quam efficitur, varius sodales nisi. Mauris consequat vel lorem eget commodo.</p>
+            </div>
+        </div>
+        <div class="row-item" id="item2">
+            <div class="title">
+                <h3>Beef</h3>
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum ultrices accumsan. Praesent placerat nec risus ac auctor. Praesent lobortis, magna vel porta ultrices, nulla nibh efficitur ipsum, at feugiat eros felis in leo. Integer enim dui, dignissim feugiat quam efficitur, varius sodales nisi. Mauris consequat vel lorem eget commodo.</p>
+            </div>
+        </div>
+        <div class="row-item" id="item3">
+            <div class="title">
+                <h3>Sushi</h3>
+            </div>
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum ultrices accumsan. Praesent placerat nec risus ac auctor. Praesent lobortis, magna vel porta ultrices, nulla nibh efficitur ipsum, at feugiat eros felis in leo. Integer enim dui, dignissim feugiat quam efficitur, varius sodales nisi. Mauris consequat vel lorem eget commodo.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
