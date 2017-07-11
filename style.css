@@ -1,0 +1,61 @@
+/* Generic Styling*/
+body {
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.row-item {
+    float: left;
+    margin: 10px;
+    padding: 25px 10px 10px;
+    position: relative;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background-color: #999;
+}
+.row-item .title {
+    top: 0;
+    right: 0;
+    padding: 5px 25px;
+    position: absolute;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.row-item .title h3 {
+    margin: 0;
+}
+.row-item#item1 .title {
+    background-color: #d59898;
+}
+.row-item#item2 .title {
+    background-color: #c14543;
+}
+.row-item#item3 .title {
+    background-color: #e5d198;
+}
+
+/* Desktops */
+@media only screen and (min-width : 992px) {
+    .row-item {
+        width: 31%;
+    }
+}
+/* Tablets */
+@media only screen and (min-width : 768px) 
+and (max-width: 991px) {
+    .row-item {
+        width: 47.3%;
+    }
+    .row-item#item3 {
+        width: 97.8%;
+    }
+}
+/* Mobile */ 
+@media only screen and (max-width : 767px) {
+    .row-item {
+        width: 70%;
+        float: none;
+        margin: 25px auto;
+    }
+}
